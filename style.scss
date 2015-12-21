@@ -1,12 +1,22 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
+*{
+  outline: none;
+}
 body ,p{
   font-family: 'Open Sans', sans-serif;
-  padding-bottom: 40px;
   color: #7c7770;
   font-size: 14.5px; 
 }
-
+.read-btn {
+    width: 120px;
+    height: 35px;
+    background: transparent;
+    border: 1px solid #71B6D5;
+    color: #71B6D5;
+    border-radius:4px;
+    margin-top: 20px;
+}
 .navbar-default .navbar-brand , .navbar-default .navbar-nav > li > a {
   color: #FFF; 
 }
@@ -21,7 +31,46 @@ body ,p{
 .sub-title {
     padding: 0;
 } 
-
+p.section-title{
+  font-size: 24px;
+  text-transform: uppercase;
+} 
+.section-title span{
+  font-weight: bold;
+}
+.hrline {
+  text-align: center;
+  position: relative;
+  margin-bottom: 7px;
+}
+.hrline i{
+  padding: 0 15px;
+  background-color: #fff;
+}
+.hrline:before{
+  border-bottom: 1px solid #e1e1e1;
+  content: "";
+  top: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  margin: auto;
+}
+.hrline .fa:before {
+    background: #71B6D5;
+    padding: 4px;
+    border-radius: 50%;
+    color: white;
+}
+.content-title{
+  font-size: 20px;
+}
+hr{
+  display: block;
+  color:red;
+  margin:40px 0; 
+}
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 .navbar-wrapper {
@@ -138,6 +187,7 @@ button.slider-btn {
     font-size: 13.5px;
     max-width: 350px;
     margin: 0 auto;
+    border-radius: 4px;
 }
 .icon-circle {
     text-align: center;
@@ -154,7 +204,6 @@ button.slider-btn {
     top: -50px;
 }
 .fa.icon-circle:before{
-  content: "\f030";
     position: relative;
     top: 34%;
     font-size: 22px;
@@ -168,7 +217,26 @@ button.slider-btn {
 .img-block {
     margin-bottom: 60px;
 }
-
+.content-text {
+    padding: 15px;
+}
+// Project section
+.project-content {
+    margin-top: 30px;
+}
+.hover-img {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    justify-content: center;
+    top: -15px;
+    width: 30px;
+    height: 90%;
+}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (min-width: 1200px) {
@@ -219,30 +287,37 @@ button.slider-btn {
         font-size: 14px;
         text-transform: uppercase;
     }
+    .navbar-collapse{
+        background: #71B6D5;
+        border-radius:4px;
+        border-bottom:none;
+    }
   }
 
     @media (min-width:769px) and (max-width:1110px){
-    .carousel-caption h2 {
-      font-size: 18px;
-      position: relative;
-      top: 10px; }
-    .carousel-caption h3 {
-      font-size: 14px; } 
-      button.slider-btn {
-        padding: 8px 12px;
-        border-radius: 5px;
-        width: initial;
-        height: initial;
-        font-size: 14px;
-        text-transform: uppercase;
-    }
+      .carousel-caption h2 {
+        font-size: 18px;
+        position: relative;
+        top: 10px; }
+      .carousel-caption h3 {
+        font-size: 14px; } 
+        button.slider-btn {
+          padding: 8px 12px;
+          border-radius: 5px;
+          width: initial;
+          height: initial;
+          font-size: 14px;
+          text-transform: uppercase;
+      }
+      .featured-img img{
+        width: 240px;
+      }
     }
     @media (max-width:500px){
-      .carousel-indicators{
-        display: none;
+        .carousel-indicators{
+          display: none;
+        }
+        .carousel-caption {
+          bottom: -11px;
       }
-      .carousel-caption {
-        bottom: -11px;
-    }
-
     }
