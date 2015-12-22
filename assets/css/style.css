@@ -322,7 +322,7 @@ a:hover .hover-icon {
 footer {
   background: #273a41;
   color: white;
-  padding: 70px 0 20px;
+  padding: 70px 0 0;
   margin-top: 60px; }
   footer p, footer li {
     color: #848a8d;
@@ -331,23 +331,86 @@ footer {
     font-size: 20px;
     margin-bottom: 30px; }
 
+.social li {
+  float: left;
+  margin: 5px 0; }
+
+footer li span.fa {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background: #2c3b42;
+  border-radius: 50%;
+  margin-right: 15px;
+  text-align: center;
+  color: white; }
+
+.social ul {
+  display: inline-block; }
+
+.bottom-footer {
+  background: #172227;
+  padding: 40px 0 30px; }
+
+ul.address li i.fa {
+  width: 40px; }
+
+ul.address li span {
+  position: relative;
+  top: -6px; }
+
+ul.address li {
+  margin-bottom: 5px; }
+
+footer .fa {
+  font-size: 26px;
+  color: #71b6d5; }
+
 .logo-footer h3 {
   font-family: 'Pacifico', cursive; }
 
 ul.tweets li {
   margin-bottom: 10px;
-  display: flex; }
-  ul.tweets li li {
-    display: flex; }
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch; }
+  ul.tweets li p {
+    flex: 8; }
   ul.tweets li i.fa-twitter {
+    flex: 1;
     margin-right: 12px;
     position: relative;
-    top: 5px;
-    font-size: 26px;
-    color: #71b6d5; }
+    top: 5px; }
+
+span.time-stamp {
+  color: #71B6D5;
+  position: relative;
+  top: 5px; }
+
+.form-control {
+  border-radius: 6px 0px 0 6px;
+  background: black;
+  border: 0;
+  height: 40px; }
+
+.form {
+  display: flex; }
+
+.form button {
+  background: #71B6D5;
+  padding: 5px 9px;
+  border: 0;
+  border-radius: 0 6px 6px 0;
+  width: 50px; }
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
+@media (max-width: 991px) {
+  .bottom-footer [class*="col-md"] {
+    text-align: left; }
+  .footer-block {
+    margin-bottom: 25px; } }
+
 @media (min-width: 1200px) {
   .container {
     width: 1060px; }
