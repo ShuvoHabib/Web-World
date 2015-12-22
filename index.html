@@ -60,7 +60,7 @@
         </div>
         <!-- Carousel
         ================================================== -->
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <div id="carousel-example-generic" class="carousel slide top-slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -114,7 +114,7 @@
                         <div class="sub-title-about col-md-12">
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since type specimen book !!</p>
                         </div>
-                        <div class="col-md-4 img-block">
+                        <div class="col-sm-4 img-block">
                             <div class="about-content">
                                 <i class="fa fa-camera icon-circle"></i>
                                 <img src="assets/img/about1.jpg" class="about-img" alt="">
@@ -124,7 +124,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 img-block">
+                        <div class="col-sm-4 img-block">
                             <div class="about-content">
                                 <i class="fa fa-pencil-square-o icon-circle"></i>
                                 <img src="assets/img/about1.jpg" class="about-img" alt="">
@@ -134,7 +134,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 img-block">
+                        <div class="col-sm-4 img-block">
                             <div class="about-content">
                                 <i class="fa fa-shopping-cart icon-circle"></i>
                                 <img src="assets/img/about1.jpg" class="about-img" alt="">
@@ -152,7 +152,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="hrline">
-                                <i class="fa fa-check"></i>
+                                <i class="fa fa-check-circle"></i>
                             </div>
                             <p class = "section-title text-center">Our <span>Features</span></p>
                         </div>
@@ -184,51 +184,171 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="hrline">
-                                <i class="fa fa-check"></i>
+                                <i class="fa fa-trophy"></i>
                             </div>
                             <p class = "section-title text-center">Our Latest <span>Projects</span></p>
                             <p class="section-subtitle text-center">Lorem Ipsum is simply dummy text the printing and typesetting. </p>
                         </div>
                         <div class="col-md-3 col-sm-6 project-content">
-                            <div class="search-img">
-                                <i class="fa fa-search hover-img"></i>
+                            <a href="#">
                                 <img src="assets/img/project.png" alt="">
-                            </div>    
+                                <i class="fa fa-search hover-icon"></i>
+                            </a>   
                             <p class="text-center project-content-title">Lorem Ipsum</p>
-                            <p class="text-center">Photography</p>
+                            <p class="text-center project-content-subtitle">Photography</p>
                         </div>
                         <div class="col-md-3 col-sm-6 project-content">
-                            <div class="search-img">
-                                <i class="fa fa-search hover-img"></i>
+                            <a href="#">
                                 <img src="assets/img/project.png" alt="">
-                            </div> 
+                                <i class="fa fa-search hover-icon"></i>
+                            </a>  
                             <p class="text-center project-content-title">Lorem Ipsum</p>
-                            <p class="text-center">Photography</p>
+                            <p class="text-center project-content-subtitle">Photography</p>
                         </div>
                         <div class="col-md-3 col-sm-6 project-content">
-                            <div class="search-img">
-                                <i class="fa fa-search  hover-img"></i>
+                            <a href="#">
                                 <img src="assets/img/project.png" alt="">
-                            </div> 
+                                <i class="fa fa-search hover-icon"></i>
+                            </a> 
                             <p class="text-center project-content-title">Lorem Ipsum</p>
-                            <p class="text-center">Photography</p>
+                            <p class="text-center project-content-subtitle">Photography</p>
                         </div>
                         <div class="col-md-3 col-sm-6 project-content">
-                            <div class="search-img">
-                                <i class="fa fa-search hover-img"></i>
+                            <a href="#">
                                 <img src="assets/img/project.png" alt="">
-                            </div> 
+                                <i class="fa fa-search hover-icon"></i>
+                            </a>  
                             <p class="text-center project-content-title">Lorem Ipsum</p>
-                            <p class="text-center">Photography</p>
+                            <p class="text-center project-content-subtitle">Photography</p>
                         </div>
                     </div>
                 </div> 
             </section>
+
+            <section class="latest-project">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="hrline">
+                                <i class="fa fa-commenting-o"></i>
+                            </div>
+                            <p class = "section-title text-center">Client <span>Testimonial</span></p>
+                            <div class="carousel slide  testimonial-slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+                              <!-- Carousel indicators -->
+                              <ol class="carousel-indicators">
+                                <li data-target="#fade-quote-carousel" data-slide-to="0"></li>
+                                <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+                                <li data-target="#fade-quote-carousel" data-slide-to="2" class="active"></li>
+                                <li data-target="#fade-quote-carousel" data-slide-to="3"></li>
+                                <li data-target="#fade-quote-carousel" data-slide-to="4"></li>
+                              </ol>
+                              <!-- Carousel items -->
+                              <div class="carousel-inner">
+                                <div class="item">
+                                    <blockquote>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since type specimen book !!</p>
+                                    </blockquote> 
+                                    <div class="line-separator">
+                                        <div class="side-line"> </div>
+                                        <div class="triangle"> </div>
+                                        <div class="side-line"> </div>
+                                    </div>
+                                    <div class="author-name text-center"><span> Robart Markel,</span> Company Name</div>  
+                                </div>
+                                <div class="item">
+                                    <blockquote>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since type specimen book !!</p>
+                                    </blockquote> 
+                                    <div class="line-separator">
+                                        <div class="side-line"> </div>
+                                        <div class="triangle"> </div>
+                                        <div class="side-line"> </div>
+                                    </div>
+                                    <div class="author-name text-center"><span> Robart Markel,</span> Company Name</div>  
+                                </div>
+                                <div class="active item">
+                                    <blockquote>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since type specimen book !!</p>
+                                    </blockquote> 
+                                    <div class="line-separator">
+                                        <div class="side-line"> </div>
+                                        <div class="triangle"> </div>
+                                        <div class="side-line"> </div>
+                                    </div>
+                                    <div class="author-name text-center"><span> Robart Markel,</span> Company Name</div>  
+                                </div>
+                                <div class="item">
+                                    <blockquote>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since type specimen book !!</p>
+                                    </blockquote> 
+                                    <div class="line-separator">
+                                        <div class="side-line"> </div>
+                                        <div class="triangle"> </div>
+                                        <div class="side-line"> </div>
+                                    </div>
+                                    <div class="author-name text-center"><span> Robart Markel,</span> Company Name</div>  
+                                </div>
+                                <div class="item">
+                                    <blockquote>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since type specimen book !!</p>
+                                    </blockquote> 
+                                    <div class="line-separator">
+                                        <div class="side-line"> </div>
+                                        <div class="triangle"> </div>
+                                        <div class="side-line"> </div>
+                                    </div>
+                                    <div class="author-name text-center"><span> Robart Markel,</span> Company Name</div>  
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </section>  
         </main>    
-
-
         <!-- FOOTER -->
         <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-block-title logo-footer">
+                            <h3>Webworld</h3>
+                            <p>
+                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure ther
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-block-title"></div>
+                        <div class="footer-block-title">
+                            <h3>Contact</h3>
+                            <p>
+                                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in so
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-block-title"></div>
+                        <div class="footer-block-title">
+                            <h3>Latest Tweets</h3>
+                            <ul class="tweets">
+                                <li><i class="fa fa-twitter"></i> <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</span></li>
+                                <li> <i class="fa fa-twitter"></i><span> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="footer-block-title"></div>
+                        <div class="footer-block-title">
+                            <h3>News Letter</h3>
+                            <p>
+                                Type your email address below and recive our daily news letter for free
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>            
     
         </footer>
         </div><!-- /.container -->
