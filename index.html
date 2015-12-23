@@ -33,15 +33,15 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="#">Webworld</a>
+                            <a class="navbar-brand logo" href="#">Webworld</a>
                         </div>
                         <div id="navbar" class="navbar-collapse collapse">
                             <ul class="nav navbar-nav navbar-right">
-                                <li class="active-menu"><a href="#">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#contact">Contact</a></li>
+                                <li class="active-menu"><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li>
                                 <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
                                         <li><a href="#">Action</a></li>
                                         <li><a href="#">Another action</a></li>
@@ -108,7 +108,7 @@
         </div>
 
         <main class="site-main">
-            <section class ="about-us">
+            <div class ="about-us">
                 <div class="container">
                     <div class="row">
                         <div class="sub-title-about col-md-12">
@@ -146,12 +146,12 @@
                         </div>
                     </div> 
                 </div>
-            </section>
-            <section class="features">
+            </div>
+            <div class="features">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="hrline">
+                            <div class="hrline spacing">
                                 <i class="fa fa-check-circle"></i>
                             </div>
                             <p class = "section-title text-center">Our <span>Features</span></p>
@@ -175,13 +175,13 @@
                         </div>
                     </div>
                 </div> 
-            </section>
+            </div>
 
-            <section class="latest-project">
+            <div class="latest-project">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="hrline">
+                            <div class="hrline spacing">
                                 <i class="fa fa-trophy"></i>
                             </div>
                             <p class = "section-title text-center">Our Latest <span>Projects</span></p>
@@ -221,88 +221,68 @@
                         </div>
                     </div>
                 </div> 
-            </section>
+            </div>
 
-            <section class="latest-project">
+            <div class="latest-project">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="hrline">
+                            <div class="hrline spacing">
                                 <i class="fa fa-commenting-o"></i>
                             </div>
                             <p class = "section-title text-center">Client <span>Testimonial</span></p>
                             <div class="carousel slide  testimonial-slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
-                              <!-- Carousel indicators -->
-                              <ol class="carousel-indicators">
-                                <li data-target="#fade-quote-carousel" data-slide-to="0"></li>
-                                <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
-                                <li data-target="#fade-quote-carousel" data-slide-to="2" class="active"></li>
-                                <li data-target="#fade-quote-carousel" data-slide-to="3"></li>
-                                <li data-target="#fade-quote-carousel" data-slide-to="4"></li>
-                              </ol>
-                              <!-- Carousel items -->
-                              <div class="carousel-inner">
-                                <div class="item">
-                                    <blockquote>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since type specimen book !!</p>
-                                    </blockquote> 
-                                    <div class="line-separator">
-                                        <div class="side-line"> </div>
-                                        <div class="triangle"> </div>
-                                        <div class="side-line"> </div>
+                                <!-- Carousel indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#fade-quote-carousel" data-slide-to="0"></li>
+                                    <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+                                    <li data-target="#fade-quote-carousel" data-slide-to="2" class="active"></li>
+                                    <li data-target="#fade-quote-carousel" data-slide-to="3"></li>
+                                    <li data-target="#fade-quote-carousel" data-slide-to="4"></li>
+                                </ol>
+                                <!-- Carousel items -->
+                                <div class="carousel-inner">
+                                    <div class="item">
+                                        <blockquote>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since type specimen book !!</p>
+                                        </blockquote> 
+                                        <div class="mybox"></div>
+                                        <div class="author-name text-center"><span> Robart Markel,</span> Company Name</div>  
                                     </div>
-                                    <div class="author-name text-center"><span> Robart Markel,</span> Company Name</div>  
-                                </div>
-                                <div class="item">
-                                    <blockquote>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since type specimen book !!</p>
-                                    </blockquote> 
-                                    <div class="line-separator">
-                                        <div class="side-line"> </div>
-                                        <div class="triangle"> </div>
-                                        <div class="side-line"> </div>
+                                    <div class="item">
+                                        <blockquote>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since type specimen book !!</p>
+                                        </blockquote> 
+                                        <div class="mybox"></div>
+                                        <div class="author-name text-center"><span> Robart Markel,</span> Company Name</div>  
                                     </div>
-                                    <div class="author-name text-center"><span> Robart Markel,</span> Company Name</div>  
-                                </div>
-                                <div class="active item">
-                                    <blockquote>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since type specimen book !!</p>
-                                    </blockquote> 
-                                    <div class="line-separator">
-                                        <div class="side-line"> </div>
-                                        <div class="triangle"> </div>
-                                        <div class="side-line"> </div>
+                                    <div class="active item">
+                                        <blockquote>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since type specimen book !!</p>
+                                        </blockquote> 
+                                        <div class="mybox"></div>
+                                        <div class="author-name text-center"><span> Robart Markel,</span> Company Name</div>  
                                     </div>
-                                    <div class="author-name text-center"><span> Robart Markel,</span> Company Name</div>  
-                                </div>
-                                <div class="item">
-                                    <blockquote>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since type specimen book !!</p>
-                                    </blockquote> 
-                                    <div class="line-separator">
-                                        <div class="side-line"> </div>
-                                        <div class="triangle"> </div>
-                                        <div class="side-line"> </div>
+                                    <div class="item">
+                                        <blockquote>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since type specimen book !!</p>
+                                        </blockquote> 
+                                        <div class="mybox"></div>
+                                        <div class="author-name text-center"><span> Robart Markel,</span> Company Name</div>  
                                     </div>
-                                    <div class="author-name text-center"><span> Robart Markel,</span> Company Name</div>  
-                                </div>
-                                <div class="item">
-                                    <blockquote>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since type specimen book !!</p>
-                                    </blockquote> 
-                                    <div class="line-separator">
-                                        <div class="side-line"> </div>
-                                        <div class="triangle"> </div>
-                                        <div class="side-line"> </div>
+                                    <div class="item">
+                                        <blockquote>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since type specimen book !!</p>
+                                        </blockquote> 
+                                        <div class="mybox"></div>
+                                        <div class="author-name text-center"><span> Robart Markel,</span> Company Name</div>  
                                     </div>
-                                    <div class="author-name text-center"><span> Robart Markel,</span> Company Name</div>  
                                 </div>
-                              </div>
                             </div>
                         </div>
                     </div>    
                 </div>
-            </section>  
+            </div>  
         </main>    
         <!-- FOOTER -->
         <footer>
@@ -310,7 +290,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
-                            <div class="footer-block-title logo-footer">
+                            <div class="footer-block-title logo logo-footer">
                                 <h3>Webworld</h3>
                                 <p>
                                     There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure ther
@@ -385,11 +365,11 @@
             </div>
         </footer>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/main.js"></script>
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
