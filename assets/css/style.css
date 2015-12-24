@@ -609,7 +609,7 @@ span.time-stamp {
     top: 60px;
     background: #e1e1e1; } }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .img-block {
     margin-bottom: 60px; }
   .contact-caption {
@@ -623,9 +623,9 @@ span.time-stamp {
       margin: 0;
       font-size: 14px; }
   .top-slide .carousel-caption h2 {
-    font-size: 14px;
+    font-size: 18px;
     position: relative;
-    top: 10px; }
+    top: 0px; }
   .top-slide .carousel-caption h3 {
     font-size: 12px;
     margin: 0; }
@@ -663,3 +663,19 @@ span.time-stamp {
     display: none; }
   .top-slide .carousel-caption {
     bottom: -11px; } }
+
+@media (max-width: 500px) {
+  .top-slide .carousel-caption h2 {
+    font-size: 14px;
+    position: relative;
+    top: 10px; }
+  .top-slide .carousel-caption h3 {
+    font-size: 12px;
+    margin: 0; }
+  .top-slide button.slider-btn {
+    padding: 4px 8px;
+    border-radius: 2px;
+    width: initial;
+    height: initial;
+    font-size: 14px;
+    text-transform: uppercase; } }

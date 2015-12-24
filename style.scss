@@ -637,7 +637,7 @@ span.time-stamp {
      }
    } 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .img-block {
     margin-bottom: 60px;
 }
@@ -656,9 +656,9 @@ span.time-stamp {
 }
 .top-slide{
   .carousel-caption h2 {
-    font-size: 14px;
+    font-size: 18px;
     position: relative;
-    top: 10px; }
+    top: 0px; }
   .carousel-caption h3 {
     font-size: 12px;
     margin: 0; } 
@@ -709,3 +709,23 @@ span.time-stamp {
       }
     }
   }
+ @media (max-width:500px){
+  .top-slide{
+  .carousel-caption h2 {
+    font-size: 14px;
+    position: relative;
+    top: 10px; }
+  .carousel-caption h3 {
+    font-size: 12px;
+    margin: 0; } 
+  button.slider-btn {
+        padding: 4px 8px;
+        border-radius: 2px;
+        width: initial;
+        height: initial;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+   
+  }
+}
