@@ -510,7 +510,9 @@ footer li span.fa {
   margin-top: 25px; }
 
 ul.address li i.fa {
-  width: 40px; }
+  width: 30px;
+  margin-right: 10px;
+  text-align: center; }
 
 ul.address li span {
   position: relative;
