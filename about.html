@@ -22,42 +22,44 @@
     <!-- NAVBAR
     ================================================== -->
     <body>
-        <div class="navbar-wrapper">
-            <div class="container">
-                <nav class="navbar navbar-default navbar-static-top">
-                    <div class="container">
-                        <div class="navbar-header ">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand logo" href="index.html">Webworld</a>
+        <header>
+            <div class="navbar-wrapper">
+                <div class="container">
+                    <nav class="navbar navbar-default navbar-static-top">
+                        <div class="container">
+                            <div class="navbar-header ">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand logo" href="index.html">Webworld</a>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active-menu"><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li class="dropdown-header">Nav header</li>
+                                            <li><a href="#">Separated link</a></li>
+                                            <li><a href="#">One more separated link</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div id="navbar" class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li class="active-menu"><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li class="dropdown-header">Nav header</li>
-                                        <li><a href="#">Separated link</a></li>
-                                        <li><a href="#">One more separated link</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+                    </nav>
+                </div>
             </div>
-        </div>
+        </header>
         <div class="main-content">
             <div class="page-header-bg">
                 <img src="img/bg.jpg" class="header-img" alt="">
@@ -78,24 +80,24 @@
                         <ul class="tweets">
                             <li>
                                 <i class="fa fa-quote-left"></i> 
-                                <p> 
+                                <a href="#"> 
                                     <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span><br>
                                     <span class ="time-stamp">4 days ago</span>
-                                </p>
+                                </a>
                             </li>
                             <li>
                                 <i class="fa fa-quote-left"></i>
-                                <p> 
+                                <a href="#"> 
                                     <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span><br>
                                     <span class ="time-stamp">4 days ago</span>
-                                </p>
+                                </a>
                             </li>
                             <li>
                                 <i class="fa fa-quote-left"></i>
-                                <p> 
+                                <a href="#"> 
                                     <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span><br>
                                     <span class ="time-stamp">4 days ago</span>
-                                </p>
+                                </a>
                             </li>
                         </ul>
                         <div class="hrline">
@@ -108,60 +110,60 @@
                             <span class="sidebar-text">Blog Tags</span>
                         </div>
                         <div class ="blog-tags">
-                            <span>Design</span>
-                            <span>Development</span>
-                            <span>Envato</span>
-                            <span>Themeforest</span>
-                            <span>Themes</span>
-                            <span>Uncategorized</span>
-                            <span>WordPress</span>
+                           <a href="#"> <span>Design</span></a>
+                           <a href="#"> <span>Development</span></a>
+                           <a href="#"> <span>Envato</span></a>
+                           <a href="#"> <span>Themeforest</span></a>
+                           <a href="#"> <span>Themes</span></a>
+                           <a href="#"> <span>Uncategorized</span></a>
+                           <a href="#"> <span>WordPress</span></a>
                         </div>
                     </div>
                     <div class="col-md-9 gallery">
                         <div class="row  no-gutters text-center">
                             <div class="col-xs-6 col-sm-4 gallery-img-box">
                                 <h3 class="image-title">Lorem Ipsum </h3>
-                                <h4 class="image-caption">WordPress </h4>
+                                <p class="image-caption">WordPress </p>
                                 <img src="img/gallery.jpg" alt="Gallery">
                             </div>
                             <div class="col-xs-6 col-sm-4 gallery-img-box">
                                 <h3 class="image-title">Lorem Ipsum </h3>
-                                <h4 class="image-caption">WordPress </h4>
+                                <p class="image-caption">WordPress </p>
                                 <img src="img/gallery.jpg" alt="Gallery">
                             </div>
                             <div class="col-xs-6 col-sm-4 gallery-img-box">
                                 <h3 class="image-title">Lorem Ipsum </h3>
-                                <h4 class="image-caption">WordPress </h4>
+                                <p class="image-caption">WordPress </p>
                                 <img src="img/gallery.jpg" alt="Gallery">
                             </div>
                             <div class="col-xs-6 col-sm-4 gallery-img-box">
                                 <h3 class="image-title">Lorem Ipsum </h3>
-                                <h4 class="image-caption">WordPress </h4>
+                                <p class="image-caption">WordPress </p>
                                 <img src="img/gallery.jpg" alt="Gallery">
                             </div>
                             <div class="col-xs-6 col-sm-4 gallery-img-box">
                                 <h3 class="image-title">Lorem Ipsum </h3>
-                                <h4 class="image-caption">WordPress </h4>
+                                <p class="image-caption">WordPress </p>
                                 <img src="img/gallery.jpg" alt="Gallery">
                             </div>
                             <div class="col-xs-6 col-sm-4 gallery-img-box">
                                 <h3 class="image-title">Lorem Ipsum </h3>
-                                <h4 class="image-caption">WordPress </h4>
+                                <p class="image-caption">WordPress </p>
                                 <img src="img/gallery.jpg" alt="Gallery">
                             </div>
                             <div class="col-xs-6 col-sm-4 gallery-img-box">
                                 <h3 class="image-title">Lorem Ipsum </h3>
-                                <h4 class="image-caption">WordPress </h4>
+                                <p class="image-caption">WordPress </p>
                                 <img src="img/gallery.jpg" alt="Gallery">
                             </div>
                             <div class="col-xs-6 col-sm-4 gallery-img-box">
                                 <h3 class="image-title">Lorem Ipsum </h3>
-                                <h4 class="image-caption">WordPress </h4>
+                                <p class="image-caption">WordPress </p>
                                 <img src="img/gallery.jpg" alt="Gallery">
                             </div>
                             <div class="col-xs-6 col-sm-4 gallery-img-box">
                                 <h3 class="image-title">Lorem Ipsum </h3>
-                                <h4 class="image-caption">WordPress </h4>
+                                <p class="image-caption">WordPress </p>
                                 <img src="img/gallery.jpg" alt="Gallery">
                             </div>
                         </div>
@@ -169,13 +171,13 @@
                 </div>
             </div> 
         </div>   
-        <!-- FOOTER -->
+         <!-- FOOTER -->
         <footer>
             <div class="top-footer">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
-                            <div class="footer-block-title logo-footer logo">
+                            <div class="footer-block-title logo logo-footer">
                                 <h3>Webworld</h3>
                                 <p>
                                     There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure ther
@@ -203,17 +205,17 @@
                                 <ul class="tweets">
                                     <li>
                                         <i class="fa fa-twitter"></i> 
-                                        <p> 
+                                        <a href ="#"> 
                                             <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</span><br>
                                             <span class ="time-stamp">1 hour ago</span>
-                                        </p>
+                                        </a>
                                     </li>
                                     <li>
                                         <i class="fa fa-twitter"></i>
-                                        <p> 
+                                        <a href ="#"> 
                                             <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</span><br>
                                             <span class ="time-stamp">1 hour ago</span>
-                                        </p>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -221,7 +223,9 @@
                         <div class="col-md-3 col-sm-6">
                             <div class="footer-block">
                                 <h3>News Letter</h3>
-                                <p>Type your email address below and recive our daily news letter for free</p>
+                                <p>
+                                    Type your email address below and recive our daily news letter for free
+                                </p>
                                 <div class="form">
                                     <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" ><button class="email-btn">Go</button>
                                 </div>
@@ -233,8 +237,8 @@
             <div class="bottom-footer">
                 <div class="container">
                     <div class="row">
-                        <div class="credit col-md-6"> 
-                            <p> © 2013 All rights reserved.  Theme by cssauthor.com</p> 
+                          <div class="credit col-md-6"> 
+                            <p> © 2013 All rights reserved.  Theme by <a href="#">cssauthor.com</a></p> 
                         </div>
                         <div class="social col-md-6 text-right">
                             <ul class="clearfix">
@@ -250,8 +254,8 @@
         <!-- Bootstrap core JavaScript
         ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="main.js"></script>
     </body>
 </html>

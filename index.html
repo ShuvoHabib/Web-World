@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <meta name="description" content="">
         <meta name="author" content="">
         <link rel="icon" href="assets/img/favicon.ico">
@@ -22,42 +21,44 @@
     <!-- NAVBAR
     ================================================== -->
     <body>
-        <div class="navbar-wrapper">
-            <div class="container">
-                <nav class="navbar navbar-default navbar-static-top">
-                    <div class="container">
-                        <div class="navbar-header ">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand logo" href="#">Webworld</a>
+        <header>
+            <div class="navbar-wrapper">
+                <div class="container">
+                    <nav class="navbar navbar-default navbar-static-top">
+                        <div class="container">
+                            <div class="navbar-header ">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand logo" href="#">Webworld</a>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active-menu"><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li class="dropdown-header">Nav header</li>
+                                            <li><a href="#">Separated link</a></li>
+                                            <li><a href="#">One more separated link</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div id="navbar" class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li class="active-menu"><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Action</a></li>
-                                        <li><a href="#">Another action</a></li>
-                                        <li><a href="#">Something else here</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li class="dropdown-header">Nav header</li>
-                                        <li><a href="#">Separated link</a></li>
-                                        <li><a href="#">One more separated link</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+                    </nav>
+                </div>
             </div>
-        </div>
+        </header>
         <!-- Carousel
         ================================================== -->
         <div id="carousel-example-generic" class="carousel slide top-slide" data-ride="carousel">
@@ -73,25 +74,25 @@
                 <div class="item active">
                     <img src="img/slide1.jpg" width="100%" class="slide-img" alt="">
                     <div class="carousel-caption">
-                        <h2>Clean, flat & polished design</h2> 
+                        <h1>Clean, flat & polished design</h1> 
                         <h3>Proin facilisis aliquam nunc quis varius.</h3>
-                        <button class="slider-btn">Show More</button>
+                        <a href="#" class="slider-btn">Show More</a>
                     </div>
                 </div>
                <div class="item">
                     <img src="img/slide1.jpg" width="100%" class="slide-img"  alt="">
                     <div class="carousel-caption">
-                        <h2>Clean, flat & polished design</h2> 
+                        <h1>Clean, flat & polished design</h1> 
                         <h3>Proin facilisis aliquam nunc quis varius.</h3>
-                        <button class="slider-btn">Show More</button>
+                        <a href="#" class="slider-btn">Show More</a>
                     </div>
                 </div>
                 <div class="item">
                     <img src="img/slide1.jpg" width="100%" class="slide-img"  alt="">
                     <div class="carousel-caption">
-                        <h2>Clean, flat & polished design</h2> 
+                        <h1>Clean, flat & polished design</h1> 
                         <h3>Proin facilisis aliquam nunc quis varius.</h3>
-                        <button class="slider-btn">Show More</button>
+                        <a href="#" class="slider-btn">Show More</a>
                     </div>
                 </div>
             </div>
@@ -119,8 +120,8 @@
                                 <i class="fa fa-camera icon-circle"></i>
                                 <img src="img/about1.jpg" class="about-img" alt="">
                                 <div class="content-text">
-                                    <p class="title">What we are </p>
-                                    <p class="sub-title">Lorem Ipsum is simply dummy text the printing and typesetting. </p>
+                                    <h3 class="title">What we are </>
+                                    <p class="desc">Lorem Ipsum is simply dummy text the printing and typesetting. </p>
                                 </div>
                             </div>
                         </div>
@@ -129,8 +130,8 @@
                                 <i class="fa fa-pencil-square-o icon-circle"></i>
                                 <img src="img/about1.jpg" class="about-img" alt="">
                                 <div class="content-text">
-                                    <p class="title">What we are </p>
-                                    <p class="sub-title">Lorem Ipsum is simply dummy text the printing and typesetting. </p>
+                                    <h3 class="title">What we are </>
+                                    <p class="desc">Lorem Ipsum is simply dummy text the printing and typesetting. </p>
                                 </div>
                             </div>
                         </div>
@@ -139,8 +140,8 @@
                                 <i class="fa fa-shopping-cart icon-circle"></i>
                                 <img src="img/about1.jpg" class="about-img" alt="">
                                 <div class="content-text">
-                                    <p class="title">What we are </p>
-                                    <p class="sub-title">Lorem Ipsum is simply dummy text the printing and typesetting. </p>
+                                    <h3 class="title">What we are </>
+                                    <p class="desc">Lorem Ipsum is simply dummy text the printing and typesetting. </p>
                                 </div>
                             </div>
                         </div>
@@ -154,7 +155,7 @@
                             <div class="hrline spacing">
                                 <i class="fa fa-check-circle"></i>
                             </div>
-                            <p class = "section-title text-center">Our <span>Features</span></p>
+                            <h2 class = "section-title text-center">Our <span>Features</span></h2>
                         </div>
                         <div class ="featured-img col-sm-4">
                             <img src="img/feature.png" alt="">
@@ -162,7 +163,7 @@
                         <div class ="feature-content-text col-sm-8">
                             <h3 class="content-title">Lorem Ipsum is Simply !!</h3>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators.</p>
-                            <button class="read-btn">Read More</button>
+                            <a href="#" class="read-btn"> Read More</a>
                         </div>
                         <div class="col-md-12"><hr></div>
                         <div class ="featured-img col-sm-4 pull-right">
@@ -171,7 +172,7 @@
                         <div class ="feature-content-text col-sm-8">
                             <h3 class="content-title">A flat Camera</h3>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators.</p>
-                            <button class="read-btn">Read More</button>
+                            <a href="#" class="read-btn"> Read More</a>
                         </div>
                     </div>
                 </div> 
@@ -184,7 +185,7 @@
                             <div class="hrline spacing">
                                 <i class="fa fa-trophy"></i>
                             </div>
-                            <p class = "section-title text-center">Our Latest <span>Projects</span></p>
+                            <h2 class = "section-title text-center">Our Latest <span>Projects</span></h2>
                             <p class="section-subtitle text-center">Lorem Ipsum is simply dummy text the printing and typesetting. </p>
                         </div>
                         <div class="col-md-3 col-sm-6 project-content">
@@ -192,7 +193,7 @@
                                 <img src="img/project.png" alt="">
                                 <i class="fa fa-search hover-icon"></i>
                             </a>   
-                            <p class="text-center project-content-title">Lorem Ipsum</p>
+                            <a href="#" class="text-center project-content-title">Lorem Ipsum</a>
                             <p class="text-center project-content-subtitle">Photography</p>
                         </div>
                         <div class="col-md-3 col-sm-6 project-content">
@@ -200,7 +201,7 @@
                                 <img src="img/project.png" alt="">
                                 <i class="fa fa-search hover-icon"></i>
                             </a>  
-                            <p class="text-center project-content-title">Lorem Ipsum</p>
+                            <a href="#" class="text-center project-content-title">Lorem Ipsum</a>
                             <p class="text-center project-content-subtitle">Photography</p>
                         </div>
                         <div class="col-md-3 col-sm-6 project-content">
@@ -208,7 +209,7 @@
                                 <img src="img/project.png" alt="">
                                 <i class="fa fa-search hover-icon"></i>
                             </a> 
-                            <p class="text-center project-content-title">Lorem Ipsum</p>
+                            <a href="#" class="text-center project-content-title">Lorem Ipsum</a>
                             <p class="text-center project-content-subtitle">Photography</p>
                         </div>
                         <div class="col-md-3 col-sm-6 project-content">
@@ -216,7 +217,7 @@
                                 <img src="img/project.png" alt="">
                                 <i class="fa fa-search hover-icon"></i>
                             </a>  
-                            <p class="text-center project-content-title">Lorem Ipsum</p>
+                            <a href="#" class="text-center project-content-title">Lorem Ipsum</a>
                             <p class="text-center project-content-subtitle">Photography</p>
                         </div>
                     </div>
@@ -230,7 +231,7 @@
                             <div class="hrline spacing">
                                 <i class="fa fa-commenting-o"></i>
                             </div>
-                            <p class = "section-title text-center">Client <span>Testimonial</span></p>
+                            <h2 class = "section-title text-center">Client <span>Testimonial</span></h2>
                             <div class="carousel slide  testimonial-slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
                                 <!-- Carousel indicators -->
                                 <ol class="carousel-indicators">
@@ -318,17 +319,17 @@
                                 <ul class="tweets">
                                     <li>
                                         <i class="fa fa-twitter"></i> 
-                                        <p> 
+                                        <a href ="#"> 
                                             <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</span><br>
                                             <span class ="time-stamp">1 hour ago</span>
-                                        </p>
+                                        </a>
                                     </li>
                                     <li>
                                         <i class="fa fa-twitter"></i>
-                                        <p> 
+                                        <a href ="#"> 
                                             <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</span><br>
                                             <span class ="time-stamp">1 hour ago</span>
-                                        </p>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>

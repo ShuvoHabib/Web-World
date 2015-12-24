@@ -3,19 +3,26 @@
 * {
   outline: none; }
 
-body, p {
+body, p, a {
   font-family: "Open Sans", sans-serif;
   color: #7c7770;
   font-size: 14.5px; }
 
+a:hover {
+  text-decoration: none;
+  color: inherit;
+  opacity: .8; }
+
 .read-btn {
-  width: 120px;
+  width: 88px;
   height: 35px;
   background: transparent;
   border: 1px solid #71B6D5;
   color: #71B6D5;
   border-radius: 4px;
-  margin-top: 20px; }
+  margin-top: 0px;
+  padding: 6px;
+  display: block; }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
   color: #FFF; }
@@ -33,10 +40,11 @@ body, p {
   font-size: 20px;
   padding: 0; }
 
-.sub-title {
-  padding: 0; }
+p.desc {
+  padding-top: 16px;
+  line-height: 22px; }
 
-p.section-title {
+h2.section-title {
   font-size: 24px;
   text-transform: uppercase; }
 
@@ -91,7 +99,7 @@ ul {
   transform: translateY(-50%);
   color: white;
   z-index: 1; }
-  .contact-caption h2 {
+  .contact-caption h1 {
     font-size: 40px;
     font-weight: bold; }
   .contact-caption h3 {
@@ -219,7 +227,15 @@ form#contact {
   bottom: 0;
   background-color: rgba(20, 27, 47, 0.5); }
 
-.top-slide .carousel-caption h2 {
+.top-slide .carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  left: 0;
+  bottom: initial; }
+
+.top-slide .carousel-caption h1 {
   font-weight: bold;
   font-size: 48px; }
 
@@ -258,7 +274,7 @@ form#contact {
 .top-slide .carousel-indicators li:nth-child(2) {
   margin: 0 15px; }
 
-.top-slide button.slider-btn {
+.top-slide a.slider-btn {
   background: #71b6d5;
   border: 0;
   padding: 8px 12px;
@@ -266,7 +282,10 @@ form#contact {
   width: 155px;
   height: 50px;
   font-size: 18px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: inherit;
+  position: relative;
+  top: 15px; }
 
 .testimonial-slide div.line-separator {
   width: 0;
@@ -383,7 +402,7 @@ blockquote {
 .project-content {
   margin-top: 30px; }
 
-.project-content a {
+.project-content a:nth-child(1) {
   position: relative;
   display: block;
   background: #fff;
@@ -419,7 +438,11 @@ a:hover .hover-icon {
   font-size: 16px;
   font-weight: bold;
   padding: 5px 0 0;
-  margin: 0; }
+  margin: 0;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  color: inherit; }
 
 .project-content-subtitle {
   font-size: 13.5px;
@@ -429,7 +452,10 @@ a:hover .hover-icon {
   width: 100%; }
 
 .gallery-img-box {
-  border: 1px solid #e1e1e1; }
+  border-right: 1px solid #e1e1e1; }
+
+div .gallery-img-box:nth-child(1) {
+  border-left: 1px solid #e1e1e1; }
 
 h3.image-title {
   font-size: 18px;
@@ -500,9 +526,15 @@ footer li span.fa {
   line-height: 40px;
   background: #2c3b42;
   border-radius: 50%;
-  margin-right: 15px;
   text-align: center;
   color: white; }
+
+footer li span.fa:hover {
+  opacity: .7;
+  transition: .3s; }
+
+footer li a {
+  margin-right: 15px; }
 
 .social ul {
   display: inline-block; }
@@ -529,12 +561,13 @@ footer .fa {
   color: #71b6d5; }
 
 ul.tweets li {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   display: flex;
   flex-flow: row wrap;
   align-items: stretch; }
-  ul.tweets li p {
-    flex: 8; }
+  ul.tweets li a {
+    flex: 8;
+    color: inherit; }
   ul.tweets li i.fa-twitter {
     flex: 1;
     margin-right: 12px;
@@ -580,13 +613,13 @@ span.time-stamp {
 @media (min-width: 1200px) {
   .container {
     width: 1040px; }
-  button.slider-btn {
+  a.slider-btn {
     margin-top: 45px; } }
 
 @media (min-width: 1400px) {
   .container {
     width: 1040px; }
-  button.slider-btn {
+  a.slider-btn {
     margin-top: 90px; } }
 
 @media (min-width: 768px) {
@@ -598,15 +631,10 @@ span.time-stamp {
     .navbar-wrapper .navbar {
       padding-right: 0;
       padding-left: 0; }
-  .top-slide .carousel-caption {
-    right: 20%;
-    left: 20%;
-    padding-bottom: 30px;
-    top: 35%; }
-    .top-slide .carousel-caption p {
-      margin-bottom: 20px;
-      font-size: 21px;
-      line-height: 1.4; }
+  .top-slide p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4; }
   .top-slide .testimonial-slide .carousel-indicators li {
     position: relative;
     top: 60px;
@@ -618,7 +646,7 @@ span.time-stamp {
   .contact-caption {
     top: 70%;
     color: white; }
-    .contact-caption h2 {
+    .contact-caption h1 {
       margin: 0;
       font-size: 24px;
       font-weight: bold; }
@@ -627,14 +655,14 @@ span.time-stamp {
       font-size: 14px; }
   .navbar {
     border: 0 solid transparent; }
-  .top-slide .carousel-caption h2 {
+  .top-slide .carousel-caption h1 {
     font-size: 18px;
     position: relative;
     top: 0px; }
   .top-slide .carousel-caption h3 {
     font-size: 12px;
     margin: 0; }
-  .top-slide button.slider-btn {
+  .top-slide a.slider-btn {
     padding: 8px 12px;
     border-radius: 5px;
     width: initial;
@@ -647,13 +675,13 @@ span.time-stamp {
     border-bottom: none; } }
 
 @media (min-width: 769px) and (max-width: 1110px) {
-  .top-slide .carousel-caption h2 {
+  .top-slide .carousel-caption h1 {
     font-size: 18px;
     position: relative;
     top: 10px; }
   .top-slide .carousel-caption h3 {
     font-size: 14px; }
-  .top-slide button.slider-btn {
+  .top-slide a.slider-btn {
     padding: 8px 12px;
     border-radius: 5px;
     width: initial;
@@ -665,12 +693,10 @@ span.time-stamp {
 
 @media (max-width: 500px) {
   .top-slide .carousel-indicators {
-    display: none; }
-  .top-slide .carousel-caption {
-    bottom: -11px; } }
+    display: none; } }
 
 @media (max-width: 500px) {
-  .top-slide .carousel-caption h2 {
+  .top-slide .carousel-caption h1 {
     font-size: 14px;
     position: relative;
     top: 0; }
@@ -678,7 +704,7 @@ span.time-stamp {
     font-size: 12px;
     margin: 0;
     top: 0; }
-  .top-slide button.slider-btn {
+  .top-slide a.slider-btn {
     padding: 4px 8px;
     border-radius: 2px;
     width: initial;

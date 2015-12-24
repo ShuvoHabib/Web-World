@@ -13,19 +13,26 @@ $font-weight: 400;
 *{
   outline: none;
 }
-body ,p{
+body ,p , a{
   font-family: $font-family;
   color: $font-color;
   font-size: $font-size; 
 }
+a:hover{
+  text-decoration: none;
+  color: inherit;
+  opacity: .8;
+}
 .read-btn {
-  width: 120px;
+  width: 88px;
   height: 35px;
   background: transparent;
   border: 1px solid #71B6D5;
   color: #71B6D5;
-  border-radius:4px;
-  margin-top: 20px;
+  border-radius: 4px;
+  margin-top: 0px;
+  padding: 6px;
+  display: block;
 }
 .navbar-default .navbar-brand , .navbar-default .navbar-nav > li > a {
   color: #FFF; 
@@ -43,10 +50,11 @@ body ,p{
     font-size: 20px;
     padding: 0;
 } 
-.sub-title {
-    padding: 0;
-} 
-p.section-title{
+p.desc {
+    padding-top: 16px;
+    line-height: 22px;
+}
+h2.section-title{
   font-size: 24px;
   text-transform: uppercase;
 } 
@@ -101,7 +109,7 @@ ul{
     transform: translateY(-50%);
     color: white;
     z-index: 1;
-  h2{
+  h1{
     font-size:40px;
     font-weight: bold;
   }
@@ -228,7 +236,15 @@ span.fa.fa-chevron-left, span.fa.fa-chevron-right {
   bottom: 0;
   background-color: rgba(20, 27, 47, 0.5); 
 }
-.carousel-caption h2 {
+.carousel-caption{
+    position:absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    left: 0;
+    bottom:initial;
+}
+.carousel-caption h1 {
   font-weight: bold;
   font-size: 48px; 
 }
@@ -267,7 +283,7 @@ span.fa.fa-chevron-left, span.fa.fa-chevron-right {
 .carousel-indicators li:nth-child(2){
   margin: 0 15px;
 } 
-button.slider-btn {
+a.slider-btn {
     background: #71b6d5;
     border: 0;
     padding: 8px 12px;
@@ -276,6 +292,9 @@ button.slider-btn {
     height: 50px;
     font-size: 18px;
     text-transform: uppercase;
+    color: inherit;
+    position: relative;
+    top: 15px;
 }
 }
 //Testimonial Page
@@ -391,7 +410,7 @@ blockquote {
 .project-content {
     margin-top: 30px;
 }
-.project-content a {
+.project-content a:nth-child(1) {
   position: relative;
   display: block;
   background: #fff;
@@ -412,33 +431,40 @@ a:hover .hover-icon {
   opacity: 1;  
 }
 .project-content .hover-icon{
-    position: absolute;
-    font-size: 30px;
-    top: 50%;
-    left: 50%;
-    color: #fff;
-    opacity: 0;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    -webkit-transition: .2s opacity ease-in-out;
-    transition: .2s opacity ease-in-out;
+  position: absolute;
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transition: .2s opacity ease-in-out;
+  transition: .2s opacity ease-in-out;
 }
-.project-content-title{
-    font-size: 16px;
-    font-weight: bold;
-    padding: 5px 0 0;
-    margin:0;
+.project-content-title {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 0 0;
+  margin: 0;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  color: inherit;
 }
 .project-content-subtitle{
-    font-size: 13.5px;
-    padding:0;
+  font-size: 13.5px;
+  padding:0;
 }
 //Gallery
 .gallery img {
     width: 100%;
 }
 .gallery-img-box {
-    border: 1px solid #e1e1e1;
+    border-right: 1px solid #e1e1e1;
+}
+div .gallery-img-box:nth-child(1) {
+    border-left: 1px solid #e1e1e1;
 }
 h3.image-title {
     font-size: 18px;
@@ -461,9 +487,9 @@ p{
 }
 }
 .sidebar-logo {
-    font-size: 30px;
-    color: #3c3a37;
-    margin-top:30px; 
+  font-size: 30px;
+  color: #3c3a37;
+  margin-top:30px; 
 }
 span.sidebar-text{
   font-size: 15px;
@@ -515,9 +541,15 @@ footer li span.fa {
     line-height: 40px;
     background: #2c3b42;
     border-radius: 50%;
-    margin-right: 15px;
     text-align: center;
     color: white;
+}
+footer li span.fa:hover {
+  opacity: .7;
+  transition: .3s;
+}
+footer li a{
+    margin-right: 15px;
 }
 .social ul {
     display: inline-block;
@@ -544,12 +576,13 @@ footer .fa{
     color: #71b6d5;
 }
 ul.tweets li {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   display: flex;
   flex-flow: row wrap;
   align-items: stretch;
- p{
+ a{
    flex:8;
+   color: inherit;
 }
  i.fa-twitter {
     flex: 1;
@@ -602,14 +635,14 @@ span.time-stamp {
 @media (min-width: 1200px) {
   .container {
     width: 1040px; }
-    button.slider-btn {
+    a.slider-btn {
         margin-top: 45px;
     }
      }
      @media (min-width: 1400px) {
       .container {
         width: 1040px; }
-        button.slider-btn {
+        a.slider-btn {
             margin-top: 90px;
         }
      }
@@ -623,15 +656,10 @@ span.time-stamp {
     padding-right: 0;
     padding-left: 0; }}
   .top-slide{
-  .carousel-caption {
-    right: 20%;
-    left: 20%;
-    padding-bottom: 30px;
-    top: 35%; 
     p {
     margin-bottom: 20px;
     font-size: 21px;
-    line-height: 1.4; }}
+    line-height: 1.4; }
     .testimonial-slide .carousel-indicators li {
         position:relative;
         top: 60px;
@@ -647,7 +675,7 @@ span.time-stamp {
 .contact-caption {
     top: 70%;
     color: white;
-  h2{
+  h1{
     margin: 0;
     font-size:24px;
     font-weight: bold;
@@ -661,14 +689,14 @@ span.time-stamp {
     border: 0 solid transparent;
 }
 .top-slide{
-  .carousel-caption h2 {
+  .carousel-caption h1 {
     font-size: 18px;
     position: relative;
     top: 0px; }
   .carousel-caption h3 {
     font-size: 12px;
     margin: 0; } 
-  button.slider-btn {
+  a.slider-btn {
         padding: 8px 12px;
         border-radius: 5px;
         width: initial;
@@ -686,13 +714,13 @@ span.time-stamp {
 }
     @media (min-width:769px) and (max-width:1110px){
       .top-slide{
-      .carousel-caption h2 {
+      .carousel-caption h1 {
         font-size: 18px;
         position: relative;
         top: 10px; }
       .carousel-caption h3 {
         font-size: 14px; } 
-        button.slider-btn {
+        a.slider-btn {
           padding: 8px 12px;
           border-radius: 5px;
           width: initial;
@@ -710,14 +738,11 @@ span.time-stamp {
         .carousel-indicators{
           display: none;
         }
-        .carousel-caption {
-          bottom: -11px;
-      }
     }
   }
  @media (max-width:500px){
   .top-slide{
-  .carousel-caption h2 {
+  .carousel-caption h1 {
     font-size: 14px;
     position: relative;
     top: 0; }
@@ -726,7 +751,7 @@ span.time-stamp {
     margin: 0; 
     top:0;
   } 
-  button.slider-btn {
+  a.slider-btn {
         padding: 4px 8px;
         border-radius: 2px;
         width: initial;
