@@ -637,7 +637,7 @@ span.time-stamp {
      }
    } 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .img-block {
     margin-bottom: 60px;
 }
@@ -653,6 +653,9 @@ span.time-stamp {
     margin: 0;
     font-size: 14px;
   }
+}
+.navbar {
+    border: 0 solid transparent;
 }
 .top-slide{
   .carousel-caption h2 {
@@ -714,10 +717,12 @@ span.time-stamp {
   .carousel-caption h2 {
     font-size: 14px;
     position: relative;
-    top: 10px; }
+    top: 0; }
   .carousel-caption h3 {
     font-size: 12px;
-    margin: 0; } 
+    margin: 0; 
+    top:0;
+  } 
   button.slider-btn {
         padding: 4px 8px;
         border-radius: 2px;
@@ -728,4 +733,11 @@ span.time-stamp {
     }
    
   }
+}
+ @media (max-width:399px){
+  .top-slide{
+  .carousel-caption{
+    display: none;
+  } 
+}
 }
