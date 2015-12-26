@@ -36,11 +36,11 @@ a:hover {
 .navbar-brand {
   font-size: 30px; }
 
-.title {
+.content-text h3 {
   font-size: 20px;
   padding: 0; }
 
-p.desc {
+.content-text p {
   padding-top: 16px;
   line-height: 22px; }
 
@@ -81,7 +81,7 @@ h2.section-title {
   color: #71B6D5;
   font-size: 30px; }
 
-.content-title {
+.feature-content-text h3 {
   font-size: 20px; }
 
 hr {
@@ -144,7 +144,8 @@ a.navbar-brand.logo:hover {
   font-size: 20px; }
 
 .maps iframe {
-  pointer-events: none; }
+  pointer-events: none;
+  width: 100%; }
 
 .contact-info .fa {
   width: 60px;
@@ -331,13 +332,13 @@ blockquote {
 .author-name {
   margin-top: 12px; }
 
-.mybox {
+.myline {
   position: relative;
   border: 1px solid #ccc;
   width: 400px;
   margin: 25px auto; }
 
-.mybox:before {
+.myline:before {
   content: ' ';
   position: absolute;
   display: block;
@@ -349,7 +350,7 @@ blockquote {
   border-width: 0 21px 21px;
   border-color: transparent #ccc transparent transparent; }
 
-.mybox:after {
+.myline:after {
   content: ' ';
   position: absolute;
   display: block;
@@ -425,10 +426,10 @@ blockquote {
 .project-content a img {
   width: 100%; }
 
-a:hover .hover-icon {
+.project-content a:hover i {
   opacity: 1; }
 
-.project-content .hover-icon {
+.project-content i {
   position: absolute;
   font-size: 30px;
   top: 50%;
@@ -609,6 +610,6 @@ footer a:focus {
   color: inherit; }
 
 .page-header-bg {
-  widows: 100%; }
+  width: 100%; }
   .page-header-bg img {
     width: 100%; }
