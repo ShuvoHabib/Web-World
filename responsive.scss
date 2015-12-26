@@ -1,0 +1,118 @@
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (max-width: 991px) {
+  .bottom-footer [class*="col-md"] {
+    text-align: left; }
+  .footer-block {
+    margin-bottom: 25px; }
+  .credit p {
+    position: static; } }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1040px; }
+  a.slider-btn {
+    margin-top: 45px; } }
+
+@media (min-width: 1400px) {
+  .container {
+    width: 1040px; }
+  a.slider-btn {
+    margin-top: 90px; } }
+
+@media (min-width: 768px) {
+  .navbar-wrapper {
+    margin-top: 20px; }
+    .navbar-wrapper .container {
+      padding-right: 15px;
+      padding-left: 15px; }
+    .navbar-wrapper .navbar {
+      padding-right: 0;
+      padding-left: 0; }
+  .top-slide p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4; }
+  .top-slide .testimonial-slide .carousel-indicators li {
+    position: relative;
+    top: 60px;
+    background: #e1e1e1; } }
+
+@media (max-width: 768px) {
+  .img-block {
+    margin-bottom: 60px; }
+  .contact-caption {
+    top: 70%;
+    color: white; }
+    .contact-caption h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: bold; }
+    .contact-caption h3 {
+      margin: 0;
+      font-size: 14px; }
+  .navbar {
+    border: 0 solid transparent; }
+  .top-slide .carousel-caption h1 {
+    font-size: 18px;
+    position: relative;
+    top: 0px; }
+  .top-slide .carousel-caption h3 {
+    font-size: 12px;
+    margin: 0; }
+  .top-slide a.slider-btn {
+    padding: 8px 12px;
+    border-radius: 5px;
+    width: initial;
+    height: initial;
+    font-size: 14px;
+    text-transform: uppercase; }
+  .navbar-collapse {
+    background: #71B6D5;
+    border-radius: 4px;
+    border-bottom: none; } }
+
+@media (min-width: 769px) and (max-width: 1110px) {
+  .top-slide .carousel-caption h1 {
+    font-size: 18px;
+    position: relative;
+    top: 10px; }
+  .top-slide .carousel-caption h3 {
+    font-size: 14px; }
+  .top-slide a.slider-btn {
+    padding: 8px 12px;
+    border-radius: 5px;
+    width: initial;
+    height: initial;
+    font-size: 14px;
+    text-transform: uppercase; }
+  .featured-img img {
+    width: 240px; } }
+
+@media (max-width: 500px) {
+  .top-slide .carousel-indicators {
+    display: none; } }
+
+@media (max-width: 500px) {
+  .navbar {
+    margin-bottom: 0;
+}
+  .top-slide .carousel-caption h1 {
+    font-size: 14px;
+    position: relative;
+    top: 0; }
+  .top-slide .carousel-caption h3 {
+    font-size: 12px;
+    margin: 0;
+    top: 0; }
+  .top-slide a.slider-btn {
+    padding: 4px 8px;
+    border-radius: 2px;
+    width: initial;
+    height: initial;
+    font-size: 14px;
+    text-transform: uppercase; } }
+
+@media (max-width: 399px) {
+  .top-slide .carousel-caption {
+    display: none; } }

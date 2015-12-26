@@ -68,7 +68,7 @@ h2.section-title{
 .hrline {
   text-align: center;
   position: relative;
-  i ,span{
+  i{
   padding: 0 15px;
   background-color: #fff;
 } 
@@ -81,6 +81,13 @@ h2.section-title{
   margin: auto;
 }
 }
+.hrline h3 {
+    padding: 0 15px;
+    background-color: #fff;
+    display: inline;
+    font-size: 15px;
+}
+
 .hrline .fa:before {
     color: #71B6D5;
     font-size: 30px;
@@ -116,6 +123,12 @@ ul{
   h3{
     font-size: 22px;
   }
+}
+a.navbar-brand.logo img {
+    margin-top: -10px;
+}
+a.navbar-brand.logo:hover {
+    opacity: 1;
 }
 .page-header-bg{
   position:relative;
@@ -463,8 +476,9 @@ a:hover .hover-icon {
 .gallery-img-box {
     border-right: 1px solid #e1e1e1;
 }
-div .gallery-img-box:nth-child(1) {
-    border-left: 1px solid #e1e1e1;
+.gallery .row.no-gutters{
+    border-top: 1px solid #E1E1E1;
+    border-left: 1px solid #E1E1E1;
 }
 h3.image-title {
     font-size: 18px;
@@ -474,6 +488,7 @@ h4.image-caption {
     font-size: 13px;
     color: #b2b2b2;
 }
+
 //Sidebar
 .sidebar {
   border: 1px solid #E1E1E1;
@@ -612,160 +627,16 @@ span.time-stamp {
     border-radius: 0 6px 6px 0;
     width: 50px;
 }
+footer a{
+  color: inherit;
+}
+footer a:focus{
+  text-decoration:none;
+  color: inherit;
+}
 .page-header-bg{
   widows: 100%;
  img{
   width: 100%;
-}
-}
-/* RESPONSIVE CSS
--------------------------------------------------- */
-@media (max-width: 991px) {
-.bottom-footer [class*="col-md"] {
-    text-align: left;
-}
-.footer-block {
-    margin-bottom: 25px;
-}
-.credit p {
-    position: static;
-}
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1040px; }
-    a.slider-btn {
-        margin-top: 45px;
-    }
-     }
-     @media (min-width: 1400px) {
-      .container {
-        width: 1040px; }
-        a.slider-btn {
-            margin-top: 90px;
-        }
-     }
-@media (min-width: 768px) {
-  .navbar-wrapper {
-    margin-top: 20px;
-  .container {
-    padding-right: 15px;
-    padding-left: 15px; }
-  .navbar {
-    padding-right: 0;
-    padding-left: 0; }}
-  .top-slide{
-    p {
-    margin-bottom: 20px;
-    font-size: 21px;
-    line-height: 1.4; }
-    .testimonial-slide .carousel-indicators li {
-        position:relative;
-        top: 60px;
-        background: #e1e1e1;
-    }
-     }
-   } 
-
-@media (max-width: 768px) {
-  .img-block {
-    margin-bottom: 60px;
-}
-.contact-caption {
-    top: 70%;
-    color: white;
-  h1{
-    margin: 0;
-    font-size:24px;
-    font-weight: bold;
-  }
-  h3{
-    margin: 0;
-    font-size: 14px;
-  }
-}
-.navbar {
-    border: 0 solid transparent;
-}
-.top-slide{
-  .carousel-caption h1 {
-    font-size: 18px;
-    position: relative;
-    top: 0px; }
-  .carousel-caption h3 {
-    font-size: 12px;
-    margin: 0; } 
-  a.slider-btn {
-        padding: 8px 12px;
-        border-radius: 5px;
-        width: initial;
-        height: initial;
-        font-size: 14px;
-        text-transform: uppercase;
-    }
-   
-  }
- .navbar-collapse{
-        background: #71B6D5;
-        border-radius:4px;
-        border-bottom:none;
-    }
-}
-    @media (min-width:769px) and (max-width:1110px){
-      .top-slide{
-      .carousel-caption h1 {
-        font-size: 18px;
-        position: relative;
-        top: 10px; }
-      .carousel-caption h3 {
-        font-size: 14px; } 
-        a.slider-btn {
-          padding: 8px 12px;
-          border-radius: 5px;
-          width: initial;
-          height: initial;
-          font-size: 14px;
-          text-transform: uppercase;
-      }
-    }
-      .featured-img img{
-        width: 240px;
-      }
-    }
-    @media (max-width:500px){
-      .top-slide{
-        .carousel-indicators{
-          display: none;
-        }
-    }
-  }
- @media (max-width:500px){
-  .top-slide{
-  .carousel-caption h1 {
-    font-size: 14px;
-    position: relative;
-    top: 0; }
-  .carousel-caption h3 {
-    font-size: 12px;
-    margin: 0; 
-    top:0;
-  } 
-  a.slider-btn {
-        padding: 4px 8px;
-        border-radius: 2px;
-        width: initial;
-        height: initial;
-        font-size: 14px;
-        text-transform: uppercase;
-    }
-   
-  }
-}
- @media (max-width:399px){
-  .top-slide{
-  .carousel-caption{
-    display: none;
-  } 
 }
 }
