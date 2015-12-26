@@ -30,7 +30,7 @@ a:hover{
   border: 1px solid #71B6D5;
   color: #71B6D5;
   border-radius: 4px;
-  margin-top: 0px;
+  margin-top: 0;
   padding: 6px;
   display: block;
 }
@@ -101,8 +101,6 @@ hr{
   margin:40px 0; 
 }
 ul{
-    margin-top: 0;
-    margin-bottom: 10px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -363,15 +361,13 @@ blockquote {
 .mybox:before {
     @include testimonial-line();
     left: 70px;
-    border-left-color: #ccc;
-    border-width: 0px 21px 21px;
+    border-width: 0 21px 21px;
     border-color: transparent #ccc transparent transparent;
 }
 .mybox:after {
     @include testimonial-line();
     left: 73px;
     bottom: -18px;
-    border-left-color: #232323;
     border-width: 0 19px 19px;
     border-color: transparent #FFFFFF transparent transparent;
 }
@@ -426,8 +422,6 @@ blockquote {
 .project-content a:nth-child(1) {
   position: relative;
   display: block;
-  background: #fff;
-  outline: none;
   background:black;
 }
 .project-content a img {
@@ -459,7 +453,6 @@ a:hover .hover-icon {
   font-size: 16px;
   font-weight: bold;
   padding: 5px 0 0;
-  margin: 0;
   width: 100%;
   margin: 0 auto;
   display: block;
@@ -612,7 +605,7 @@ span.time-stamp {
     top: 5px;
 }
 .form-control {
-    border-radius: 6px 0px 0 6px;
+    border-radius: 6px 0 0 6px;
     background: black;
     border: 0;
     height: 40px;
