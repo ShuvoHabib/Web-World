@@ -76,7 +76,7 @@ h2.section-title {
   }
   &:before {
     @include center();
-    border-bottom: 1px solid$boder-color;
+    border-bottom: 1px solid $boder-color;
     content: "";
     top: 50%;
     z-index: -1;
