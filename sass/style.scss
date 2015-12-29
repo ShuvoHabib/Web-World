@@ -12,7 +12,9 @@ body, p, a {
   color: $font-color;
   font-size: $font-size;
 }
-
+h3 {
+  font-size: $font-size + $font-size/2;
+}
 a:hover {
   text-decoration: none;
   color: inherit;
@@ -40,7 +42,6 @@ a:hover {
 
 .content-text {
   h3{
-    font-size: 20px;
     padding: 0;
   }
   p {
@@ -50,15 +51,14 @@ a:hover {
 }
 
 h2.section-title {
-  font-size: $font-size;
+  font-size: $font-size + 10;
   text-transform: uppercase;
   span {
     font-weight: bold;
   }
 }
 .spacing {
-  margin-bottom: 20px;
-  margin-top: 90px;
+  margin: 90px 0 20px;
 }
 
 .hrline {
@@ -68,7 +68,7 @@ h2.section-title {
     padding: 0 15px;
     background-color: $white-color;
     display: inline;
-    font-size: 15px;
+    font-size: $font-size+1;
   }
   i {
     padding: 0 15px;
@@ -76,7 +76,7 @@ h2.section-title {
   }
   &:before {
     @include center();
-    border-bottom: 1px solid $boder-color;
+    border-bottom: 1px solid $border-color;
     content: "";
     top: 50%;
     z-index: -1;
@@ -85,14 +85,8 @@ h2.section-title {
   .fa {
     &:before {
       color: $secondary-color;
-      font-size: 30px;
+      font-size: $font-size*2 +2;
     }
-  }
-}
-
-.feature-content-text{
-  h3 {
-    font-size: 20px;
   }
 }
 
@@ -110,11 +104,8 @@ ul {
   color: $white-color;
   z-index: 1;
   h1 {
-    font-size: 40px;
+    font-size: $font-size*3;
     font-weight: bold;
-  }
-  h3 {
-    font-size: 22px;
   }
 }
 a.navbar-brand.logo {
@@ -217,7 +208,7 @@ a.navbar-brand.logo {
     bottom: initial;
     h1 {
       font-weight: bold;
-      font-size: 48px;
+      font-size: $font-size*3 + $font-size/2;
     }
     h3 {
       font-size: 25px;
@@ -261,7 +252,7 @@ a.navbar-brand.logo {
     padding: 8px 12px;
     border-radius: 5px;
     @include size(155px,50px);
-    font-size: 18px;
+    font-size: $font-size +4;
     text-transform: uppercase;
     color: inherit;
     position: relative;
@@ -274,14 +265,11 @@ a.navbar-brand.logo {
 .contact-info {
   margin-top: 40px;
   li {
-    font-size: 13.5px;
-  }
-  h3{
-    font-size: 20px;
+    font-size: $font-size;
   }
   .fa {
     @include icon-style(60px);
-    font-size: 30px;
+    font-size: $font-size*2;
     background: $secondary-color;
     color: $white-color;
     border-radius: 50%;
@@ -307,7 +295,7 @@ form#contact {
     @include size(100%,40px);
     border-radius: 5px;
     color: $white-color;
-    font-size: 20px;
+    font-size: $font-size + $font-size/2;
   }
 }
 
@@ -325,7 +313,7 @@ form#contact {
     li {
       position: relative;
       top: 60px;
-      background: $boder-color;
+      background: $border-color;
     }
     .active {
       background: $secondary-color;
@@ -345,7 +333,7 @@ form#contact {
 blockquote {
   padding: 0;
   margin: 10px 0 5px;
-  font-size: 18px;
+  font-size: $font-size +4;
   text-align: center;
   border-left: none;
 }
@@ -380,7 +368,7 @@ blockquote {
 
 .sub-title-about {
   p {
-    font-size: 18px;
+    font-size: $font-size +4;
     margin-top: 90px;
     margin-bottom: 100px;
     text-align: center;
@@ -388,9 +376,9 @@ blockquote {
 }
 
 .about-content {
-  border: 1px solid $boder-color;
+  border: 1px solid $border-color;
   text-align: center;
-  font-size: 13.5px;
+  font-size: $font-size;
   max-width: 350px;
   margin: 0 auto;
   border-radius: 4px;
@@ -411,7 +399,7 @@ blockquote {
 .fa.icon-circle:before {
   position: relative;
   top: 34%;
-  font-size: 22px;
+  font-size: $font-size +$font-size/2;
   color: $white-color;
 }
 
@@ -472,7 +460,7 @@ blockquote {
   }
 
   &-subtitle {
-    font-size: 13.5px;
+    font-size: $font-size;
     padding: 0;
   }
 }
@@ -484,37 +472,36 @@ blockquote {
     width: 100%;
   }
   .row.no-gutters {
-    border-top: 1px solid $boder-color;
-    border-left: 1px solid $boder-color;
+    border-top: 1px solid $border-color;
+    border-left: 1px solid $border-color;
   }
 }
 .gallery-img-box {
-  border-right: 1px solid $boder-color;
+  border-right: 1px solid $border-color;
   h3 {
     font-size: 18px;
     color: #484848;
   }
   p{
-    font-size: 13px;
+    font-size: $font-size;
     color: #b2b2b2;
   }
 }
-
 /* Sidebar */
 
 .sidebar {
-  border: 1px solid $boder-color;
+  border: 1px solid $border-color;
   border-radius: 10px;
   margin-bottom: 20px;
   p {
-    font-size: 13px;
+    font-size: $font-size;
   }
   .fa {
     margin-right: 10px;
     color: $secondary-color;
   }
   &-logo {
-    font-size: 30px;
+    font-size: $font-size *2 +2;
     color: #3c3a37;
     margin-top: 30px;
   }
@@ -522,9 +509,8 @@ blockquote {
     margin: 30px 0;
   }
 }
-
 span.sidebar-text {
-  font-size: 15px;
+  font-size: $font-size;
   text-transform: uppercase;
 }
 
@@ -557,17 +543,17 @@ footer {
   margin-top: 60px;
   p, li {
     color: #848a8d;
-    font-size: 13.5px;
+    font-size: $font-size;
   }
   h3 {
-    font-size: 20px;
+    font-size: $font-size + $font-size/2;
     margin-bottom: 30px;
   }
   a{
     margin-right: 15px;
   }
   .fa {
-    font-size: 26px;
+    font-size: $font-size *2;
     color: $secondary-color;
   }
   li span.fa {

@@ -26,11 +26,9 @@
   .navbar-wrapper {
     margin-top: 20px; }
   .navbar-wrapper .container {
-    padding-right: 15px;
-    padding-left: 15px; }
+    padding:0 15px; }
   .navbar-wrapper .navbar {
-    padding-right: 0;
-    padding-left: 0; }
+    padding:0; }
   .top-slide p {
     margin-bottom: 20px;
     font-size: 21px;
@@ -46,9 +44,6 @@
   }
   .img-block {
     margin-bottom: 60px; }
-  .contact-caption {
-    top: 70%;
-    color: white; }
   .contact-caption h1 {
     margin: 0;
     font-size: 24px;
@@ -61,7 +56,7 @@
   .top-slide .carousel-caption h1 {
     font-size: 18px;
     position: relative;
-    top: 0px; }
+    top: 0; }
   .top-slide .carousel-caption h3 {
     font-size: 12px;
     margin: 0; }
@@ -76,7 +71,11 @@
     background: rgba(16, 33, 45, 0.81);
     border-radius: 4px;
     border-bottom: none;
-  } }
+  }
+  .featured-img img {
+    width: 100%;
+  }
+}
 
 @media (min-width: 769px) and (max-width: 1110px) {
   .top-slide .carousel-caption h1 {

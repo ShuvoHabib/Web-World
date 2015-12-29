@@ -8,6 +8,9 @@ body, p, a {
   color: #7c7770;
   font-size: 14px; }
 
+h3 {
+  font-size: 21px; }
+
 a:hover {
   text-decoration: none;
   color: inherit;
@@ -31,21 +34,19 @@ a:hover {
   margin-top: 50px; }
 
 .content-text h3 {
-  font-size: 20px;
   padding: 0; }
 .content-text p {
   padding-top: 16px;
   line-height: 22px; }
 
 h2.section-title {
-  font-size: 14px;
+  font-size: 24px;
   text-transform: uppercase; }
   h2.section-title span {
     font-weight: bold; }
 
 .spacing {
-  margin-bottom: 20px;
-  margin-top: 90px; }
+  margin: 90px 0 20px; }
 
 .hrline {
   text-align: center;
@@ -71,9 +72,6 @@ h2.section-title {
     color: #71B6D5;
     font-size: 30px; }
 
-.feature-content-text h3 {
-  font-size: 20px; }
-
 ul {
   margin: 0;
   padding: 0;
@@ -89,10 +87,8 @@ ul {
   color: #fff;
   z-index: 1; }
   .contact-caption h1 {
-    font-size: 40px;
+    font-size: 42px;
     font-weight: bold; }
-  .contact-caption h3 {
-    font-size: 22px; }
 
 a.navbar-brand.logo img {
   margin-top: -10px; }
@@ -183,7 +179,7 @@ a.navbar-brand.logo:hover {
   bottom: initial; }
   .top-slide .carousel-caption h1 {
     font-weight: bold;
-    font-size: 48px; }
+    font-size: 49px; }
   .top-slide .carousel-caption h3 {
     font-size: 25px; }
 .top-slide .carousel-control {
@@ -230,14 +226,12 @@ a.navbar-brand.logo:hover {
 .contact-info {
   margin-top: 40px; }
   .contact-info li {
-    font-size: 13.5px; }
-  .contact-info h3 {
-    font-size: 20px; }
+    font-size: 14px; }
   .contact-info .fa {
     width: 60px;
     height: 60px;
     line-height: 60px;
-    font-size: 30px;
+    font-size: 28px;
     background: #71B6D5;
     color: #fff;
     border-radius: 50%; }
@@ -262,7 +256,7 @@ form#contact {
     height: 40px;
     border-radius: 5px;
     color: #fff;
-    font-size: 20px; }
+    font-size: 21px; }
 
 /* Testimonial Page */
 .testimonial-slide .line-separator {
@@ -337,7 +331,7 @@ blockquote {
 .about-content {
   border: 1px solid #e1e1e1;
   text-align: center;
-  font-size: 13.5px;
+  font-size: 14px;
   max-width: 350px;
   margin: 0 auto;
   border-radius: 4px; }
@@ -359,7 +353,7 @@ blockquote {
 .fa.icon-circle:before {
   position: relative;
   top: 34%;
-  font-size: 22px;
+  font-size: 21px;
   color: #fff; }
 
 .about-img {
@@ -405,7 +399,7 @@ blockquote {
     display: block;
     color: inherit; }
   .project-content-subtitle {
-    font-size: 13.5px;
+    font-size: 14px;
     padding: 0; }
 
 /* Gallery */
@@ -421,7 +415,7 @@ blockquote {
     font-size: 18px;
     color: #484848; }
   .gallery-img-box p {
-    font-size: 13px;
+    font-size: 14px;
     color: #b2b2b2; }
 
 /* Sidebar */
@@ -430,7 +424,7 @@ blockquote {
   border-radius: 10px;
   margin-bottom: 20px; }
   .sidebar p {
-    font-size: 13px; }
+    font-size: 14px; }
   .sidebar .fa {
     margin-right: 10px;
     color: #71B6D5; }
@@ -442,7 +436,7 @@ blockquote {
     margin: 30px 0; }
 
 span.sidebar-text {
-  font-size: 15px;
+  font-size: 14px;
   text-transform: uppercase; }
 
 .form-search-control {
@@ -471,14 +465,14 @@ footer {
   margin-top: 60px; }
   footer p, footer li {
     color: #848a8d;
-    font-size: 13.5px; }
+    font-size: 14px; }
   footer h3 {
-    font-size: 20px;
+    font-size: 21px;
     margin-bottom: 30px; }
   footer a {
     margin-right: 15px; }
   footer .fa {
-    font-size: 26px;
+    font-size: 28px;
     color: #71B6D5; }
   footer li span.fa {
     width: 40px;
@@ -586,12 +580,10 @@ footer a {
     margin-top: 20px; }
 
   .navbar-wrapper .container {
-    padding-right: 15px;
-    padding-left: 15px; }
+    padding: 0 15px; }
 
   .navbar-wrapper .navbar {
-    padding-right: 0;
-    padding-left: 0; }
+    padding: 0; }
 
   .top-slide p {
     margin-bottom: 20px;
@@ -609,10 +601,6 @@ footer a {
   .img-block {
     margin-bottom: 60px; }
 
-  .contact-caption {
-    top: 70%;
-    color: white; }
-
   .contact-caption h1 {
     margin: 0;
     font-size: 24px;
@@ -628,7 +616,7 @@ footer a {
   .top-slide .carousel-caption h1 {
     font-size: 18px;
     position: relative;
-    top: 0px; }
+    top: 0; }
 
   .top-slide .carousel-caption h3 {
     font-size: 12px;
@@ -645,7 +633,10 @@ footer a {
   .navbar-collapse {
     background: rgba(16, 33, 45, 0.81);
     border-radius: 4px;
-    border-bottom: none; } }
+    border-bottom: none; }
+
+  .featured-img img {
+    width: 100%; } }
 @media (min-width: 769px) and (max-width: 1110px) {
   .top-slide .carousel-caption h1 {
     font-size: 18px;
