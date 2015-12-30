@@ -21,3 +21,7 @@
   width: $width;
   height: $height;
 }
+@mixin block-center() {
+  display: block;
+  margin: 0 auto;
+}

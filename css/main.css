@@ -5,8 +5,8 @@
 
 body, p, a {
   font-family: "Open Sans", sans-serif;
-  color: #7c7770;
-  font-size: 14px; }
+  font-size: 14px;
+  color: #7c7770; }
 
 h3 {
   font-size: 21px; }
@@ -134,7 +134,8 @@ li a:hover {
 
 .dropdown:hover .dropdown-menu {
   display: block;
-  background: rgba(26, 49, 66, 0.59); }
+  background: rgba(26, 49, 66, 0.59);
+  background: transparent; }
 
 .navbar-wrapper {
   position: absolute;
@@ -353,9 +354,9 @@ blockquote {
   right: 0;
   width: 100px;
   height: 100px;
-  text-align: center;
-  margin: 0 auto;
   display: block;
+  margin: 0 auto;
+  text-align: center;
   background: #71B6D5;
   border: 10px solid #fff;
   border-radius: 50%;
@@ -402,12 +403,12 @@ blockquote {
     -webkit-transition: .2s opacity ease-in-out;
     transition: .2s opacity ease-in-out; }
   .project-content-title {
+    display: block;
+    margin: 0 auto;
     font-size: 16px;
     font-weight: bold;
     padding: 5px 0 0;
     width: 100%;
-    margin: 0 auto;
-    display: block;
     color: inherit; }
   .project-content-subtitle {
     font-size: 14px;
@@ -420,12 +421,10 @@ blockquote {
 .gallery img {
   width: 100%; }
 
-.gallery .row.no-gutters {
-  border-top: 1px solid #e1e1e1;
-  border-left: 1px solid #e1e1e1; }
-
 .gallery-img-box {
-  border-right: 1px solid #e1e1e1; }
+  border: 1px solid #e1e1e1;
+  margin-left: -1px;
+  margin-bottom: -1px; }
   .gallery-img-box h3 {
     font-size: 18px;
     color: #484848; }
@@ -532,9 +531,7 @@ ul.tweets li {
     overflow: hidden;
     margin-right: 10px;
     position: relative;
-    top: 5px;
-    float: left;
-    width: 30px; }
+    float: left; }
   ul.tweets li .text-flow {
     overflow: hidden; }
 
@@ -608,6 +605,10 @@ footer a {
     background: #e1e1e1; } }
 
 @media (max-width: 768px) {
+  .project-list {
+    display: block;
+    margin: 0 auto;
+    width: 300px; }
   .dropdown:hover .dropdown-menu {
     position: relative; }
   .img-block {
@@ -629,11 +630,11 @@ footer a {
     font-size: 12px;
     margin: 0; }
   .top-slide a.slider-btn {
-    padding: 8px 12px;
-    border-radius: 5px;
     width: initial;
     height: initial;
     font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 5px;
     text-transform: uppercase; }
   .navbar-collapse {
     background: rgba(16, 33, 45, 0.81);

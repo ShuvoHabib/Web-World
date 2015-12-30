@@ -8,9 +8,10 @@
 }
 
 body, p, a {
-  font-family: $font-family;
-  color: $font-color;
-  font-size: $font-size;
+  font:{
+    family: $font-family;
+    size: $font-size; }
+    color: $font-color;
 }
 h3 {
   font-size: $font-size + $font-size/2;
@@ -159,6 +160,7 @@ a.navbar-brand.logo {
 .dropdown:hover .dropdown-menu {
   display: block;
   background: rgba(26, 49, 66, 0.59);
+  background: transparent;
 }
 .navbar-wrapper {
   @include center();
@@ -386,9 +388,8 @@ blockquote {
 .icon-circle {
   @include center();
   @include size(100px,100px);
+  @include block-center();
   text-align: center;
-  margin: 0 auto;
-  display: block;
   background: $secondary-color;
   border: 10px solid $white-color;
   border-radius: 50%;
@@ -403,8 +404,7 @@ blockquote {
 }
 
 .about-img {
-  display: block;
-  margin: 0 auto;
+  @include block-center();
   width: 100%
 }
 
@@ -449,12 +449,11 @@ blockquote {
     transition: .2s opacity ease-in-out;
   }
   &-title {
+    @include block-center();
     font-size: 16px;
     font-weight: bold;
     padding: 5px 0 0;
     width: 100%;
-    margin: 0 auto;
-    display: block;
     color: inherit;
   }
 
@@ -473,13 +472,11 @@ blockquote {
   img {
     width: 100%;
   }
-  .row.no-gutters {
-    border-top: 1px solid $border-color;
-    border-left: 1px solid $border-color;
-  }
 }
 .gallery-img-box {
-  border-right: 1px solid $border-color;
+  border: 1px solid $border-color;
+  margin-left: -1px;
+  margin-bottom: -1px;
   h3 {
     font-size: 18px;
     color: #484848;
@@ -607,9 +604,7 @@ ul.tweets li {
     overflow: hidden;
     margin-right: 10px;
     position: relative;
-    top: 5px;
     float: left;
-    width: 30px;
   }
   .text-flow {
     overflow: hidden;

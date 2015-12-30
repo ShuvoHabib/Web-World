@@ -31,14 +31,18 @@
     padding:0; }
   .top-slide p {
     margin-bottom: 20px;
-    font-size: 21px;
+    font-size: $font-size + $font-size/2;
     line-height: 1.4; }
   .top-slide .testimonial-slide .carousel-indicators li {
     position: relative;
     top: 60px;
-    background: #e1e1e1; } }
+    background: $border-color; } }
 
 @media (max-width: 768px) {
+  .project-list {
+    @include block-center();
+    width: 300px;
+  }
   .dropdown:hover .dropdown-menu {
     position: relative;
   }
@@ -46,29 +50,28 @@
     margin-bottom: 60px; }
   .contact-caption h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: $font-size + 10;
     font-weight: bold; }
   .contact-caption h3 {
     margin: 0;
-    font-size: 14px; }
+    font-size: $font-size }
   .navbar {
     border: 0 solid transparent; }
   .top-slide .carousel-caption h1 {
-    font-size: 18px;
+    font-size: $font-size + 4;
     position: relative;
     top: 0; }
   .top-slide .carousel-caption h3 {
-    font-size: 12px;
+    font-size: $font-size - 2;
     margin: 0; }
   .top-slide a.slider-btn {
+    @include size(initial,initial);
+    font-size: $font-size;
     padding: 8px 12px;
     border-radius: 5px;
-    width: initial;
-    height: initial;
-    font-size: 14px;
     text-transform: uppercase; }
   .navbar-collapse {
-    background: rgba(16, 33, 45, 0.81);
+    background: $nav-collapse-bg;
     border-radius: 4px;
     border-bottom: none;
   }
@@ -79,17 +82,16 @@
 
 @media (min-width: 769px) and (max-width: 1110px) {
   .top-slide .carousel-caption h1 {
-    font-size: 18px;
+    font-size: $font-size + 4;
     position: relative;
     top: 10px; }
   .top-slide .carousel-caption h3 {
-    font-size: 14px; }
+    font-size: $font-size; }
   .top-slide a.slider-btn {
     padding: 8px 12px;
     border-radius: 5px;
-    width: initial;
-    height: initial;
-    font-size: 14px;
+    @include size(initial,initial);
+    font-size: $font-size;
     text-transform: uppercase; }
   .featured-img img {
     width: 240px; } }
@@ -103,19 +105,18 @@
     margin-bottom: 0;
   }
   .top-slide .carousel-caption h1 {
-    font-size: 14px;
+    font-size: $font-size;
     position: relative;
     top: 0; }
   .top-slide .carousel-caption h3 {
-    font-size: 12px;
+    font-size: $font-size - 2;
     margin: 0;
     top: 0; }
   .top-slide a.slider-btn {
     padding: 4px 8px;
     border-radius: 2px;
-    width: initial;
-    height: initial;
-    font-size: 14px;
+    @include size(initial,initial);
+    font-size: $font-size;
     text-transform: uppercase; } }
 
 @media (max-width: 360px) {
