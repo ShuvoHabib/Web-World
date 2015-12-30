@@ -20,7 +20,11 @@ a:hover {
   color: inherit;
   opacity: .8;
 }
-
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .read-btn {
   @include size(88px,35px);
   background: transparent;
@@ -90,11 +94,6 @@ h2.section-title {
   }
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 
 .contact-caption {
   @include center;
@@ -464,6 +463,9 @@ blockquote {
     padding: 0;
   }
 }
+.post-list,.about-content-list,.project-list {
+  display: inline-block;
+}
 
 /* Gallery */
 
@@ -497,7 +499,6 @@ blockquote {
     font-size: $font-size;
   }
   .fa {
-    margin-right: 10px;
     color: $secondary-color;
   }
   &-logo {
@@ -599,21 +600,21 @@ footer {
 
 ul.tweets li {
   margin-bottom: 25px;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: stretch;
   a {
-    flex: 8;
     color: inherit;
   }
-  i.fa-twitter {
-    flex: 1;
-    margin-right: 12px;
+  .icon-flow {
+    overflow: hidden;
+    margin-right: 10px;
     position: relative;
     top: 5px;
+    float: left;
+    width: 30px;
+  }
+  .text-flow {
+    overflow: hidden;
   }
 }
-
 span.time-stamp {
   color: $secondary-color;
   position: relative;

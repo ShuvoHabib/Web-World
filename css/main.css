@@ -16,6 +16,11 @@ a:hover {
   color: inherit;
   opacity: .8; }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
 .read-btn {
   width: 88px;
   height: 35px;
@@ -72,11 +77,6 @@ h2.section-title {
   .hrline .fa:before {
     color: #71B6D5;
     font-size: 30px; }
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
 
 .contact-caption {
   position: absolute;
@@ -413,6 +413,9 @@ blockquote {
     font-size: 14px;
     padding: 0; }
 
+.post-list, .about-content-list, .project-list {
+  display: inline-block; }
+
 /* Gallery */
 .gallery img {
   width: 100%; }
@@ -438,7 +441,6 @@ blockquote {
   .sidebar p {
     font-size: 14px; }
   .sidebar .fa {
-    margin-right: 10px;
     color: #71B6D5; }
   .sidebar-logo {
     font-size: 30px;
@@ -523,18 +525,18 @@ footer {
   margin-top: 25px; }
 
 ul.tweets li {
-  margin-bottom: 25px;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: stretch; }
+  margin-bottom: 25px; }
   ul.tweets li a {
-    flex: 8;
     color: inherit; }
-  ul.tweets li i.fa-twitter {
-    flex: 1;
-    margin-right: 12px;
+  ul.tweets li .icon-flow {
+    overflow: hidden;
+    margin-right: 10px;
     position: relative;
-    top: 5px; }
+    top: 5px;
+    float: left;
+    width: 30px; }
+  ul.tweets li .text-flow {
+    overflow: hidden; }
 
 span.time-stamp {
   color: #71B6D5;
