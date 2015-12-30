@@ -23,6 +23,9 @@
 }
 
 @media (min-width: 768px) {
+  .post-list, .about-content-list, .project-list {
+    display: inline-block;
+  }
   .navbar-wrapper {
     margin-top: 20px; }
   .navbar-wrapper .container {
@@ -36,7 +39,8 @@
   .top-slide .testimonial-slide .carousel-indicators li {
     position: relative;
     top: 60px;
-    background: $border-color; } }
+    background: $border-color; }
+}
 
 @media (max-width: 768px) {
   .project-list {

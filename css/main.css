@@ -414,9 +414,6 @@ blockquote {
     font-size: 14px;
     padding: 0; }
 
-.post-list, .about-content-list, .project-list {
-  display: inline-block; }
-
 /* Gallery */
 .gallery img {
   width: 100%; }
@@ -589,6 +586,8 @@ footer a {
     width: 100%; } }
 
 @media (min-width: 768px) {
+  .post-list, .about-content-list, .project-list {
+    display: inline-block; }
   .navbar-wrapper {
     margin-top: 20px; }
   .navbar-wrapper .container {
